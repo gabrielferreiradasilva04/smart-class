@@ -13,7 +13,7 @@ import java.util.List;
 @Dao
 public interface UserTypeDAO {
     @Insert
-    public  Long insert(UserTypeEntity userTypeEntity);
+    public  void insert(UserTypeEntity userTypeEntity);
     @Query("SELECT * FROM userType")
     public LiveData<List<UserTypeEntity>> getAll();
     

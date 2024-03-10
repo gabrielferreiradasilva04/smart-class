@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface UserTypeRepositoryInterface {
 
-    public Long insert(String description);
+    public void insert(UserTypeEntity userTypeEntity);
 
     public  LiveData<List<UserTypeEntity>> getAll();
 }
